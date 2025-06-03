@@ -1,4 +1,4 @@
-@media (max-width: 430.98px) {
+@media only screen and (max-width: 430.98px) {
   .rem {
     display: none !important;
   }
