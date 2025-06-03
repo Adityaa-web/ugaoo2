@@ -1,0 +1,763 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  background-color: rgba(255, 242, 228, 0.625);
+}
+.col-1 {
+  align-self: center;
+  margin-left: 25%;
+  width: 100%;
+}
+
+.nav {
+  width: 52%;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.nav a,
+li {
+  display: inline-block;
+  position: relative;
+  color: rgb(4, 69, 4);
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 0.9rem;
+  margin-left: 2px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  z-index: 2;
+}
+
+.nav li,
+a:hover {
+  color: rgba(4, 69, 4, 0.74);
+}
+
+.nav li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.01em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.svg {
+  justify-content: center;
+}
+
+.rem {
+  gap: 4rem !important;
+}
+
+.search input {
+  width: 100%;
+  height: 45%;
+  border-radius: 60px;
+  align-self: center;
+}
+.search ::placeholder {
+  font-size: 11px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+  align-self: center;
+}
+.svg {
+  margin-top: 30px;
+  cursor: pointer;
+  margin-left: -13%;
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.plant-drop {
+  position: relative;
+}
+
+.drop-content {
+  position: absolute;
+  display: none;
+  background-color: rgb(253, 247, 241);
+  width: 250px;
+  padding: 20px;
+  z-index: 1;
+  animation: slideUp 0.3s ease forwards !important;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-content li {
+  margin-bottom: 5%;
+  animation: slidedown 0.4s ease forwards;
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-content a {
+  font-size: 14px;
+}
+
+.plant-drop:hover .drop-content {
+  display: block;
+}
+
+.shop-drop {
+  position: relative;
+}
+
+.drop-content-inner {
+  position: absolute;
+  display: none;
+  background-color: rgb(255, 242, 228);
+  width: 250px;
+  padding: 20px;
+  z-index: 1;
+  top: 100%;
+}
+
+.drop-content-inner li {
+  margin-bottom: 8%;
+}
+
+.drop-content-inner a {
+  font-size: 14px;
+}
+
+.shop-drop:hover .drop-content-inner {
+  display: block;
+}
+
+.announcement {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 15px;
+  background-color: #fff031;
+  gap: 50px;
+  display: flex;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  color: rgb(0, 90, 0);
+  justify-items: space-evenly;
+}
+
+.slash-bar {
+  background-color: rgba(255, 255, 255, 0.622);
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.slash-bar-text {
+  padding-left: 3.5%;
+  margin-bottom: -0.5rem !important;
+}
+
+.announcement p {
+  margin-left: 130px;
+   margin-top: 5px;
+}
+
+.active {
+  border-bottom: 1px solid #044504;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Full screen height */
+  background-image: url("https://www.ugaoo.com/cdn/shop/files/Gifting_page-100.jpg?v=1731327096&width=2000"); /* Replace with your image */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-container button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, 200%);
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #029153;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: background 0.4s ease-in-out;
+}
+
+.background-container button:hover {
+  box-shadow: none;
+  background-color: #0a4c36;
+  transition-delay: var(--duration-default);
+}
+
+.background-container button:hover:hover {
+  background: #0a4c36;
+}
+
+/* Shine Effect */
+.background-container button:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -110%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-30deg);
+  transition: left 0.7s ease-in-out;
+}
+
+.background-container button:hover::after {
+  left: 120%;
+}
+
+.box {
+  padding: 40px 30px;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #029153; /* Thin black border */
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 15px;
+}
+
+.box img {
+  margin-right: 0%;
+  margin-left: 35.5%;
+  margin-top: 2%;
+}
+
+.box-container {
+  display: flex;
+}
+
+.box p {
+  text-align: center;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.avn p {
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10%;
+  color: #000000bc;
+  text-align: center;
+}
+
+.adv {
+  margin-right: 1.5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bestseller h2 {
+  width: 100%;
+  align-items: center;
+  font-weight: 600;
+  color: #0a4c36;
+}
+
+.products-row2 {
+  gap: 10px;
+  display: flex;
+  margin-left: 0%;
+  height: 20%;
+  width: 100%;
+}
+
+.img1 {
+  width: 51%;
+  padding-top: 95.9px;
+  padding-left: 60px;
+}
+
+.info {
+  padding-top: 200px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  background-color: #eff8f2;
+  width: 45%;
+  margin-top: 6.5%;
+}
+
+.container1 {
+  display: flex;
+}
+
+.container2 {
+  display: flex;
+}
+
+.img2 {
+  width: 46%;
+  padding-top: 95.9px;
+}
+
+.info2 {
+  padding-top: 200px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  background-color: #eff8f2;
+  width: 45%;
+  margin-top: 6.5%;
+  margin-left: 4%;
+}
+
+.carousel-container {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+}
+
+.carousel-item {
+  min-width: 100px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+.stars {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.join2 img {
+  margin-top: 3.5%;
+  margin-right: 4.6666%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.join2 {
+  background-color: rgba(227, 246, 246, 0.479);
+  height: 650px;
+  display: flex;
+  gap: 110px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.345);
+}
+
+.gapdiv {
+  width: 72%;
+}
+
+.products193 {
+  gap: 3px;
+}
+
+.gapdiv2 {
+  display: flex;
+  gap: 30px;
+}
+
+.noofprod {
+  padding-top: 3px;
+}
+
+.gapdiv3 {
+  width: 2%;
+  background-color: #ffffff;
+  padding: 18px;
+}
+
+.gapdiv4 {
+  width: 10%;
+}
+
+.products-row1 {
+  display: flex;
+  height: 20%;
+  width: 100%;
+}
+
+.prod1 {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  margin-left: -2%;
+}
+
+.border-prod1 {
+  width: 400px;
+  height: 350px;
+}
+
+.border-prod2 {
+  width: 30%;
+}
+
+.border-prod3 {
+  width: 30%;
+}
+
+.border-prod4 {
+  width: 30%;
+}
+
+.prod1 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.default-image {
+  width: 70%;
+}
+
+
+.prod2 {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.prod2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.prod3 {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.prod3 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.prod4 {
+  height: 350px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.prod4 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffd700;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-left: 7%;
+  font-weight: 00;
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+}
+
+
+
+.old-price {
+  text-decoration: line-through;
+  color: grey;
+  margin-right: 5px;
+  position: absolute;
+  margin-top: 0%;
+  margin-left: -60%;
+}
+
+.stars {
+  color: #ffa500;
+  margin-top: 4%;
+  font-size: 24px;
+  position: absolute;
+  margin-left: 9%;
+}
+
+.stars1 {
+  color: #ffa500;
+  margin-top: 23%;
+  font-size: 24px;
+  position: absolute;
+  margin-left: -52%;
+}
+
+.stars2 {
+  color: #ffa500;
+  margin-top: 23%;
+  font-size: 24px;
+  position: absolute;
+  margin-left: -47%;
+}
+
+.add-to-cart {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #029153;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: background 0.4s ease-in-out;
+  text-align: center;
+  padding: 11px 2px 11px 15px;
+  width: 350px;
+}
+
+.add-to-cart:hover {
+  background: #0a4c36;
+  color: white;
+}
+
+/* Shine Effect */
+.add-to-cart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-30deg);
+  transition: left 0.7s ease-in-out;
+}
+
+.add-to-cart:hover::after {
+  left: 120%;
+}
+
+.add-to-cart-button {
+  padding-top: 112px;
+}
+
+.product-title-2 {
+  font-size: 20px;
+  margin-left: 7%;
+  font-weight: 00;
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  padding-left: 1.3%;
+}
+
+.products-row1 {
+  gap: 10px;
+}
+
+.products-row2 {
+  gap: 10px;
+  display: flex;
+}
+
+.products-row3 {
+  gap: 10px;
+}
+
+.gapdiv1 {
+  width: 2%;
+}
+
+.rowgap {
+  margin-top: 4%;
+}
+
+
+
+
+.infoB4footer {
+    color: #0A4C36;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+}
+
+.bottom-desc {
+    text-align: justify;
+    font-weight: 400;
+    color: rgba(var(--color-foreground), .75);
+}
+
+.bottom-desc h2,
+h3 {
+    font-size: 18px;
+    font-family: Outfit, sans-serif !important;
+    color:#0A4C36;
+}
+
+.bottom-desc h3 {
+    font-size: 16px;
+    color:#0A4C36;
+}
+
+.gapdivforinfo{
+    width:5%;
+    padding-top:5%;
+}
+
+.page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0rem 2.5rem;
+  }
+
+   .plantsGrowPeople {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+  }
+  .plants.grow.people-w {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+  }
+  .plantsGrowPeople--title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .footergap{
+    padding:2%;
+  }
+
+  .footer__content-top {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+  }
+
+  .footer__content-top {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }

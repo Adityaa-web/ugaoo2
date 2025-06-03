@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.announcement {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 15px;
+  background-color: #fff031;
+  gap: 50px;
+  display: flex;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  color: rgb(0, 90, 0);
+  justify-items: space-evenly;
+}
+.announcement p {
+  margin-left: 130px;
+  margin-top: 5px;
+}
+.active {
+  border-bottom: 1px solid #044504;
+}
+.slash-bar {
+    background-color: rgba(255, 255, 255, 0.622);
+    width: 100%;
+      font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.slash-bar-text {
+    padding-left: 3.5%;
+margin-bottom: -0.5rem !important;
+
+}
+
+.para {
+    padding-right: 3%;
+
+}
+
+.shining-button {
+    position: relative;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #029153;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.4s ease-in-out;
+}
+
+.shining-button:hover {
+    background: #0A4C36;
+}
+
+/* Shine Effect */
+.shining-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: left 0.7s ease-in-out;
+}
+
+.shining-button:hover::after {
+    left: 120%;
+}
+
+.shining-buttons {
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.gapdiv {
+    width: 72%;
+}
+
+.products193 {
+    gap: 3px;
+}
+
+.gapdiv2 {
+    display: flex;
+    gap: 30px;
+}
+
+.noofprod {
+    padding-top: 3px;
+}
+
+.gapdiv3 {
+    width: 2%;
+    background-color: #FFFFFF;
+    padding: 18px;
+}
+
+.gapdiv4 {
+    width: 10%;
+}
+
+.products-row1 {
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+
+
+.prod1 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-left: -2%;
+}
+
+
+
+.border-prod1 {
+    width: 400px;
+    height: 350px;
+
+}
+
+.border-prod2 {
+    width: 30%;
+
+}
+
+.border-prod3 {
+    width: 30%;
+
+}
+
+.border-prod4 {
+    width: 30%;
+
+}
+
+.prod1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.default-image{
+    width: 70%;
+}
+
+.prod1 .hover-image {
+    opacity: 0;
+}
+
+.prod1:hover .hover-image {
+    opacity: 1;
+}
+
+.prod1:hover .default-image {
+    opacity: 0;
+}
+
+.prod2 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.prod2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.prod2 .hover-image {
+    opacity: 0;
+}
+
+.prod2:hover .hover-image {
+    opacity: 1;
+}
+
+.prod2:hover .default-image {
+    opacity: 0;
+}
+
+.prod3 {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.prod3 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.prod3 .hover-image {
+    opacity: 0;
+}
+
+.prod3:hover .hover-image {
+    opacity: 1;
+}
+
+.prod3:hover .default-image {
+    opacity: 0;
+}
+
+
+.prod4 {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.prod4 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+
+.prod4 .hover-image {
+    opacity: 0;
+}
+
+.prod4:hover .hover-image {
+    opacity: 1;
+}
+
+.prod4:hover .default-image {
+    opacity: 0;
+}
+
+
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #FFD700;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 20px;
+    margin-left: 7%;
+    font-weight: 00;
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin-left: 11%;
+    margin-top: 3%;
+    color: #008000;
+    font-weight: 300;
+    position: absolute;
+    display: flex;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+    margin-right: 5px;
+    position: absolute;
+    margin-top: 0%;
+    margin-left: -60%;
+}
+
+.stars {
+    color: #FFA500;
+    margin-top: 4%;
+    font-size: 24px;
+    position: absolute;
+    margin-left: 9%;
+
+}
+
+.stars1 {
+    color: #FFA500;
+    margin-top: 23%;
+    font-size: 24px;
+    position: absolute;
+    margin-left: -52%;
+}
+
+.stars2 {
+    color: #FFA500;
+    margin-top: 23%;
+    font-size: 24px;
+    position: absolute;
+    margin-left: -47%;
+}
+
+
+
+.add-to-cart {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #029153;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.4s ease-in-out;
+    text-align: center;
+    padding: 11px 2px 11px 15px;;
+    width: 350px;
+}
+
+
+.add-to-cart:hover {
+    background: #0A4C36;
+    color: white;
+}
+
+/* Shine Effect */
+.add-to-cart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: left 0.7s ease-in-out;
+}
+
+.add-to-cart:hover::after {
+    left: 120%;
+}
+
+.add-to-cart-button {
+
+    padding-top: 112px;
+}
+
+.product-title-2 {
+    font-size: 20px;
+    margin-left: 7%;
+    font-weight: 00;
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-left: 1.3%;
+}
+
+.products-row1 {
+    gap: 10px;
+}
+
+.products-row2 {
+    gap: 10px;
+    display: flex;
+}
+
+.products-row3 {
+    gap: 10px;
+}
+
+
+.gapdiv1 {
+    width: 2%;
+}
+
+
+.rowgap {
+    margin-top: 4%;
+}
+
+
+.infoB4footer {
+    color: #0A4C36;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+}
+
+.bottom-desc {
+    text-align: justify;
+    font-weight: 400;
+    color: rgba(var(--color-foreground), .75);
+}
+
+.bottom-desc h2,
+h3 {
+    font-size: 18px;
+    font-family: Outfit, sans-serif !important;
+    color:#0A4C36;
+}
+
+.bottom-desc h3 {
+    font-size: 16px;
+    color:#0A4C36;
+}
+
+.gapdivforinfo{
+    width:5%;
+    padding-top:5%;
+}
+
+.page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0rem 2.5rem;
+  }
+
+  .heading, h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    letter-spacing: calc(var(--font-heading-scale) * .06rem);
+    color: rgb(var(--color-heading));
+    line-height: calc(1 + .3/max(1,var(--font-heading-scale)));
+    padding:10px;
+  }
+
+  h1, h2, h3, h4, h6, p, body, span, a, label, button {
+    font-family: Outfit,sans-serif !important;
+  }
+
+  .plantsGrowPeople {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+  }
+  .plants.grow.people-w {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+  }
+  .plantsGrowPeople--title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .footergap{
+    padding:2%;
+  }
+
+  .footer__content-top {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+  }
+
+  .footer__content-top {
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+
+.respo{
+    display: none;
+}

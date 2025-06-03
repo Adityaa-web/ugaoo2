@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.announcement {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 15px;
+  background-color: #fff031;
+  gap: 50px;
+  display: flex;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  color: rgb(0, 90, 0);
+  justify-items: space-evenly;
+}
+.announcement p {
+  margin-left: 130px;
+   margin-top: 5px;
+}
+header {
+  background-color: rgba(255, 242, 228, 0.625);
+}
+
+.col-1 {
+  align-self: center;
+  margin-left: 26%;
+  width: 100%;
+}
+
+.slash-bar {
+  background-color: rgba(255, 255, 255, 0.622);
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.slash-bar-text {
+  padding-left: 3.5%;
+  margin-bottom: -0.5rem !important;
+}
+
+.nav {
+  width: 52%;
+  margin-top: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.rem {
+  gap: 4rem !important;
+}
+
+.active {
+  border-bottom: 1px solid #044504;
+}
+
+.nav a,
+li {
+  display: inline-block;
+  position: relative;
+  color: rgb(4, 69, 4);
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 0.9rem;
+  margin-left: 2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  z-index: 2;
+}
+
+.nav li,
+a:hover {
+  color: rgba(4, 69, 4, 0.74);
+}
+
+.nav li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.01em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.svg {
+  justify-content: center;
+}
+
+.search input {
+  width: 100%;
+  height: 45%;
+  border-radius: 60px;
+  align-self: center;
+}
+
+.search ::placeholder {
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 250;
+  font-style: normal;
+  align-self: center;
+}
+
+.svg {
+  margin-top: 30px;
+  cursor: pointer;
+  margin-left: -13%;
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* Dropdown Menu Styles */
+.plant-drop {
+  position: relative;
+}
+
+.drop-content {
+  position: absolute;
+  display: none;
+  background-color: rgb(253, 247, 241);
+  width: 250px;
+  padding: 20px;
+  z-index: 1;
+  animation: slideUp 0.3s ease forwards !important;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-content li {
+  margin-bottom: 6%;
+  animation: slidedown 0.4s ease forwards;
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drop-content a {
+  font-size: 14px;
+}
+
+.plant-drop:hover .drop-content {
+  display: block;
+}
+
+.shop-drop {
+  position: relative;
+}
+
+.drop-content-inner {
+  position: absolute;
+  display: none;
+  background-color: rgb(255, 242, 228);
+  width: 250px;
+  padding: 20px;
+  z-index: 1;
+  top: 100%;
+}
+
+.drop-content-inner li {
+  margin-bottom: 8%;
+}
+
+.drop-content-inner a {
+  font-size: 14px;
+}
+
+.shop-drop:hover .drop-content-inner {
+  display: block;
+}
+
+span {
+  font-family: Outfit, sans-serif !important;
+  font-size: 1.2rem;
+}
+
+.plant-div {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.plant-div h1 {
+  padding-bottom: 4px;
+}
+
+div p a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: rgb(4, 69, 4);
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 0.9rem;
+  margin-left: 2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  z-index: 2;
+}
+
+.bnt1 {
+  margin-left: 3%;
+  /* margin-right: 30%; */
+}
+
+#bot {
+  filter: brightness(3000%);
+  margin-top: -4%;
+}
+
+.bnt2 {
+  margin-left: 70%;
+}
+
+.prods {
+  color: gray;
+  font-size: medium;
+}
+
+.seller2 {
+  justify-content: space-evenly;
+}
+
+.seller h2 {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+}
+
+.card {
+  margin-top: 2%;
+  width: 330px;
+  height: 500px;
+  border: none;
+}
+
+.card img {
+  width: 330px;
+  height: 410px;
+  object-fit: cover;
+}
+
+#odd img {
+  height: 340px;
+}
+
+#why3 {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.card h5 {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: -5%;
+}
+
+.card p {
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: -2.5%;
+}
+
+.cancel {
+  color: rgba(88, 88, 88, 0.824);
+  font-size: 12px;
+}
+
+.price {
+  color: green;
+  font-weight: 400;
+}
+
+.star {
+  color: rgba(255, 183, 0, 0.886);
+  font-size: 30px;
+  margin-left: 100px;
+}
+
+.bts {
+  background-color: #029354;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 2%;
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+.bts:hover {
+  background-color: #005f33;
+  color: white;
+}
+
+.offn {
+  margin-top: 105%;
+}
+
+.off {
+  width: 10%;
+  background-color: rgb(254, 208, 47);
+  margin-top: -100%;
+  margin-left: 10px;
+  position: relative;
+}
+
+.above {
+  position: relative;
+  margin-top: 1.5%;
+}
+
+.above img {
+  display: block;
+}
+
+.above .below {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.above:hover .below {
+  opacity: 1;
+}
+
+.page-width {
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
+.bottom-desc {
+  text-align: justify;
+  font-weight: 400;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.bottom-desc h2,
+h3 {
+  font-size: 18px;
+  font-family: Outfit, sans-serif !important;
+  color: #0a4c36;
+}
+
+.bottom-desc h3 {
+  font-size: 16px;
+  color: #0a4c36;
+}
+
+.gapdivforinfo {
+  width: 5%;
+  padding-top: 5%;
+}
+
+.page-width {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0rem 2.5rem;
+}
+
+.hovar {
+  transition: all 0.3s ease-in-out;
+}
+
+.hovar:hover {
+  transform: scale(1.1);
+}
+
+
+.respo{
+  display: none;
+}

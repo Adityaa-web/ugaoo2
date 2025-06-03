@@ -1,0 +1,474 @@
+@media (max-width: 430.98px) {
+  .rem {
+    display: none !important;
+  }
+
+  .respo {
+    display: contents !important;
+    background-color: rgb(255, 247, 238);
+  }
+
+  .cen {
+    margin-left: 120px;
+  }
+
+  .menu {
+    margin-top: -60px;
+    margin-left: 16px;
+    width: 7%;
+  }
+
+  .span {
+    background-color: rgb(255, 247, 238);
+    width: auto;
+    height: 125px;
+  }
+
+  .drop {
+    margin-top: 15px;
+
+  }
+
+  .drop-content,
+  .drop-content-inner,
+  .down {
+    position: absolute;
+    display: none;
+    background-color: rgb(253, 247, 241);
+    width: 163px;
+    padding: 20px;
+    z-index: 1;
+    animation: slideUp 0.3s ease forwards !important;
+
+  }
+
+  .drop-content li,
+  .drop-content-inner li {
+    margin-bottom: 6%;
+    animation: slidedown 0.4s ease forwards;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slidedown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .drop-content a,
+  .drop-content-inner a,
+  .down a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(4, 69, 4);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    display: block;
+    padding: 6px 10px;
+  }
+
+  .drop-content a:hover,
+  .drop-content-inner a:hover,
+  .down a:hover {
+    background-color: rgba(4, 69, 4, 0.1);
+    border-radius: 4px;
+  }
+
+  .plant-drop:hover .drop-content,
+  .shop-drop:hover .drop-content-inner,
+  .menu:hover .down {
+    display: block;
+  }
+
+  .plant {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icon {
+    margin-left: 347px;
+    margin-top: -77px;
+  }
+
+  .search input {
+    width: 400px;
+    height: 47%;
+    border-radius: 60px;
+    align-self: center;
+    position: relative !important;
+  }
+
+  .col-2 {
+    margin-left: 17px;
+    margin-top: 13px;
+    width: 90%;
+  }
+
+  .svg {
+    margin-top: 9px;
+    cursor: pointer;
+    margin-left: -9%;
+    position: relative;
+            width: 5%;
+  }
+
+  .nope {
+    display: none !important;
+  }
+
+  .help {
+    display: contents !important;
+  }
+
+  .flex {
+    display: flex !important;
+  }
+
+  .scroll-container {
+    overflow-y: scroll;
+    white-space: nowrap;
+    padding: 10px;
+  }
+
+  .scroll-content {
+    display: flex;
+    gap: 65px;
+    margin-top: 10px;
+    margin-left: 65px;
+  }
+
+  .avn {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+
+  .org {
+    display: none;
+  }
+
+  .demo {
+    display: contents !important;
+    justify-content: space-evenly;
+  }
+
+  .demo .chead{
+    margin-left: 2%;
+    width: 96%;
+  }
+
+  .demo .card2{
+    gap: 1rem !important;
+    margin-bottom: 2.5%;
+  }
+
+  .demo h2{
+    font-size: 30px;
+    padding: 15px;
+  }
+
+  .cd{
+    gap: 1.5rem !important;
+     overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+
+  }
+
+  .seller h2{
+    font-size: 30px;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 313px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .card .off{
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: -2.5%;
+    width: 19%;
+    margin-top: -169px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .card .price{
+    font-size: 16px;
+    
+  }
+
+  .card h5{
+    padding: 5px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -18%;
+    font-size: 14px;
+  }
+
+  .btn{
+    width: 95%;
+    height: 35px;
+    font-size: 14px;
+    margin-left: 4.8px;
+  }
+
+  .star{
+    margin-left: 22px;
+  }
+
+  .card p{
+    margin-bottom: -7.5%;
+    margin-top: -5%;
+  }
+
+  .new h2{
+    font-size: 30px;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .end {
+    display: none !important;
+  }
+
+  .cento h2 {
+    text-align: center;
+    margin-top: 2%;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(7, 65, 59);
+    font-size: 14px !important;
+    margin-bottom: 4%;
+  }
+
+  .cento {
+    width: 408px !important;
+    /* margin-left: 18%; */
+
+  }
+
+  .announcement {
+    display: none;
+  }
+
+  .background-container img {
+    height: 100%;
+    width: 575px;
+  }
+
+  .background-container button {
+    position: absolute;
+    top: 30%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, 200%);
+    padding: 10px 20px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    background: #029153;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.4s ease-in-out;
+  }
+
+  .box-container {
+    display: contents;
+  }
+
+  .adv {
+    gap: 200px;
+    margin-left: 208px;
+    display: contents;
+  }
+
+  .avn img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .product-image img {
+    width: 390px;
+    height: 400px;
+  }
+
+  .explore {
+    display: block;
+    height: 778px;
+  }
+
+  .mg {
+    width: 93% !important;
+  }
+
+  .pl {
+    margin-top: -196px;
+    padding: 15px;
+  }
+
+  .exp {
+    margin-left: 32%;
+    margin-top: -3px;
+    width: 35%;
+  }
+
+.about h2{
+  font-size: 30px;
+}
+  .about p{
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .join{
+    display: none;
+  }
+
+
+  .plant-div p,span{
+    font-size: 14px;
+  }
+
+  .plant-div h2{
+    font-size: 18px;
+  }
+
+ .buton{
+  display: flex;
+  gap: 155px;
+ } 
+
+ .btn-success{
+    width: 30%;
+ }
+
+ #bot{
+  margin-top: -40%;
+  margin-left: 80px;
+ }
+
+ .split-section-right-images{
+  width: 366px !important;
+ }
+
+ .split-section-content{
+  height: 254px !important;
+ }
+
+ .title{
+  font-size: 22px;
+ }
+
+ .articles{
+  display: block;
+  margin-left: 3%;
+ }
+
+ .article-card{
+  width: 94%;
+ }
+
+ .slash-offer h6 a{
+  font-size: 10px;
+ }
+#odd img{
+  height: 178.8px;
+}
+
+.first{
+  display: none !important;
+}
+
+
+.container1{
+  display: block;
+}
+
+.img1{
+  width: 96%;
+  padding-top: 95.9px;
+  padding-left: 20px;
+}
+
+.container1 .info{
+  width: 91.5%;
+  padding: 20px;
+  margin-left: 4.5%;
+  margin-top: -3%;
+}
+
+
+.container2{
+  display: block;
+  height: 247px;
+}
+
+.img2{
+  width: 92%;
+  margin-left: 4%;
+  margin-top: -157%;
+}
+
+.container2 .info2{
+  width: 92%;
+  padding: 20px;
+  margin-left: 4%;
+  margin-top: 97.5%;
+}
+
+
+
+}
+
+
+
